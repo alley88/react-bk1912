@@ -1,12 +1,15 @@
 import React, { Component } from 'react'
-
+import Header from "@components/header"
+import {PageContainer} from "@/globalStyled"
+import WeekList from '@components/WeekList'
 export default class Home extends Component {
     render() {
       
         return (
-            <div>
-                Home
-            </div>
+            <PageContainer>
+                <Header path="/classify"/>
+                <WeekList/>
+            </PageContainer>
         )
     }
 }

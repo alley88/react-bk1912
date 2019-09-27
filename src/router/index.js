@@ -3,7 +3,9 @@ import {
     Find,
     Order,
     Mine,
-    Login
+    Login,
+    ClassIfy,
+    Category
 } from "@pages"
 
 
@@ -67,6 +69,28 @@ export const noLayoutRoutes = [
         name: "登陆",
         icon: "",
         component: Login,
+        exact: true,
+        meta: {
+            requireAuth: false
+        }
+    },
+    {
+        key:"/classify",
+        path:"/classify",
+        name:"分类",
+        icon:"",
+        component:ClassIfy,
+        exact: true,
+        meta: {
+            requireAuth: false
+        }
+    },
+    {
+        key:"/category",
+        path:"/category/:id",
+        name:"列表",
+        icon:"",
+        component:Category,
         exact: true,
         meta: {
             requireAuth: false

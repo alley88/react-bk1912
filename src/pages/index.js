@@ -26,14 +26,23 @@ const Login  = Loadable({
     loader:()=>import("./login"),
     loading:Loading
 })
+const ClassIfy = Loadable({
+    loader:()=>import("./classIfy"),
+    loading:Loading
+})
 
-
+const Category = Loadable({
+    loader:()=>import("./category"),
+    loading:Loading
+})
 
 export {
     Home,
     Find,
     Order,
     Mine,
-    Login
+    Login,
+    ClassIfy,
+    Category
  
 }
