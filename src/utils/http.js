@@ -33,7 +33,7 @@ const post = (url, data) => {
             "content-type": "application/x-www-form-urlencoded"
         },
         body: qs.stringify(data)
-    })
+    }).then(res=>res.json())
 
 
     return result;
