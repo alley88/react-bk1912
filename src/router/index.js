@@ -5,7 +5,9 @@ import {
     Mine,
     Login,
     ClassIfy,
-    Category
+    Category,
+    Regiter,
+    ModifyPic
 } from "@pages"
 
 
@@ -75,6 +77,17 @@ export const noLayoutRoutes = [
         }
     },
     {
+        key: "/register",
+        path: "/register",
+        name: "注册",
+        icon: "",
+        component: Regiter,
+        exact: true,
+        meta: {
+            requireAuth: false
+        }
+    },
+    {
         key:"/classify",
         path:"/classify",
         name:"分类",
@@ -95,7 +108,20 @@ export const noLayoutRoutes = [
         meta: {
             requireAuth: false
         }
+    },
+    {
+        key:"/ModifyPic",
+        path:"/ModifyPic",
+        name:"修改头像",
+        icon:"",
+        component:ModifyPic,
+        exact: true,
+        meta: {
+            requireAuth: false
+        }
     }
+    
+    
 ]
 
 export const baseConfigRoutes = layoutRoutes.concat(noLayoutRoutes);

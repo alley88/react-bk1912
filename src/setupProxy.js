@@ -8,4 +8,10 @@ module.exports = (app)=>{
             "^/api":""
         }
     }))
+
+    app.use(proxy("/users",{
+        target:"http://10.60.13.121:3000",
+        changeOrigin:true,
+    }))
 }
+

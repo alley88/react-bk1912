@@ -25,6 +25,7 @@
 - styled-components
 - http-proxy-middleware
 - @babel/plugin-proposal-decorators 装饰器
+- js-cookie
 
 ```javascript
     yarn add react-router-dom redux react-redux redux-actions redux-thunk whatwg-fetch react-loadable qs styled-components

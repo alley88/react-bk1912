@@ -15,7 +15,7 @@ class List extends Component {
                             </div>
                             <div className="item_des">
                                 <div className="name">{item.name}</div>
-                                <div className="price">{item.price/100}/位</div>
+                                <div className="price">{item.price / 100}/位</div>
                             </div>
                         </div>
                     ))

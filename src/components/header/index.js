@@ -12,7 +12,7 @@ class Header extends Component {
                     <img src={logo}/>
                 </div>
                 <div className="header_r">
-                    <span>登陆</span>
+                    <span><Link to="/login">登陆</Link></span>
                     <i className="iconfont">&#xe62a;</i>
                 </div>
             </HeaderWrapper>

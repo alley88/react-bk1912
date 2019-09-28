@@ -36,6 +36,16 @@ const Category = Loadable({
     loading:Loading
 })
 
+const Regiter = Loadable({
+    loader:()=>import("./register"),
+    loading:Loading
+})
+
+const ModifyPic = Loadable({
+    loader:()=>import("./mine/children/modifyPic"),
+    loading:Loading
+})
+
 export {
     Home,
     Find,
@@ -43,6 +53,8 @@ export {
     Mine,
     Login,
     ClassIfy,
-    Category
+    Category,
+    Regiter,
+    ModifyPic
  
 }
